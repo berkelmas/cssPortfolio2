@@ -1,0 +1,16 @@
+.content {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.sidebar {
+  background-color: $color-secondary;
+  color: $color-grey-light-2;
+  flex-basis: 18%;
+}
+
+.hotel-view {
+  flex-grow: 1;
+  background-color: orangered; 
+}

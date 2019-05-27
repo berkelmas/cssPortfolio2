@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+body {
+  background-image: linear-gradient(to right bottom, #eb2f64, #BA265D);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 20rem; }
+
+.container {
+  max-width: 120rem;
+  min-height: 60rem;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
+  background-color: #faf9f9;
+  margin: 0 auto; }
+
+.content {
+  display: flex;
+  flex-direction: row; }
+
+.sidebar {
+  background-color: #101d2c;
+  color: #f4f2f2;
+  flex-basis: 18%; }
+
+.hotel-view {
+  flex-grow: 1;
+  background-color: orangered; }
+
+.header {
+  height: 7rem;
+  background-color: #fff; }
