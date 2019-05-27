@@ -18,7 +18,12 @@
   &-nav {
     list-style: none;
     width: 100%;
-    margin-top: 2rem; 
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
 
     &-item {
       font-size: 1rem;
@@ -26,11 +31,29 @@
       padding : 1rem 1rem;
       width: 100%;
 
+      position : relative;
+
+      &.active {
+        background-color: $color-primary;
+      }
+
+      &::before {
+        content : "";
+        position: absolute;
+        width: 2.5%;
+        height: 65%;
+        background-color: $color-primary;
+        margin-left : -1rem;
+        margin-top: -.4rem;
+        opacity: 0;
+
+        transition: all .3s;
+      }
 
       & > a {
         text-decoration: none;
         color : white;
-        margin-left: 1rem;
+
         & > span {
           margin-left: 3rem;
         }
@@ -43,7 +66,9 @@
       }
 
       &:hover {
-        background-color: $color-primary;
+        &::before {
+          opacity: 1;
+        }
       }
     }
 
@@ -58,9 +83,7 @@
   }
 }
 
-
-
 .hotel-view {
   flex-grow: 1;
-  background-color: orangered;
+  background-color: gray;
 }
