@@ -13,16 +13,58 @@
     </head>
     <body>
         <div class="container">
+
           <header class="header">
-            Header
+
+            <img class="header-img" src="img/logo.png" alt="">
+
+            <form>
+              <input type="text" placeholder="Search..." class="search-input">
+              <button type="submit" class="search-button">
+                <svg class="search-button-icon">
+                  <use xlink:href="img/svgicons.svg#icon-search"></use>
+                </svg>
+              </button>
+            </form>
+
+            <nav class="user-nav">
+              <div class="user-nav-section">
+                  <a href="#">
+                    <svg class="user-nav-section-icon">
+                      <use xlink:href="img/svgicons.svg#icon-bookmark"></use>
+                    </svg>
+                    <span class="user-nav-section-notification">7</span>
+                  </a>
+              </div>
+              <div class="user-nav-section">
+                <a href="#">
+                  <svg class="user-nav-section-icon">
+                    <use xlink:href="img/svgicons.svg#icon-bubbles2"></use>
+                  </svg>
+                  <span class="user-nav-section-notification">13</span>
+                </a>
+              </div>
+
+              <div class="user-nav-profile">
+                <a href="user-nav-profile-a" >
+                  <img src="img/realtor-1.jpeg" alt="" class="user-nav-profile-img">
+                </a>
+                <p class="user-nav-profile-span">Berk</p>
+              </div>
+              
+            </nav>
+
           </header>
+
           <div class="content"> <!-- content is the entire part below the header -->
             <div class="sidebar">
               Navigation
             </div>
+
             <main class="hotel-view">
               Hotel View
             </main>
+
           </div>
         </div>
     </body>

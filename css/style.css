@@ -30,12 +30,14 @@ body {
 
 .content {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  height: 80%; }
 
 .sidebar {
   background-color: #101d2c;
   color: #f4f2f2;
-  flex-basis: 18%; }
+  flex-basis: 18%;
+  height: 100%; }
 
 .hotel-view {
   flex-grow: 1;
@@ -43,4 +45,78 @@ body {
 
 .header {
   height: 7rem;
-  background-color: #fff; }
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .header-img {
+    height: 50%;
+    margin-left: 1rem; }
+
+.search-input {
+  border-radius: 100px;
+  border: none;
+  padding: 1rem 3rem;
+  outline: none;
+  background-color: #faf9f9;
+  transition: all .5s;
+  width: 25rem; }
+  .search-input:focus {
+    background-color: #e3dddd;
+    width: 30rem; }
+
+.search-button {
+  height: 5rem;
+  width: 5rem;
+  border: none;
+  outline: none;
+  margin-left: -5rem;
+  background-color: transparent; }
+  .search-button-icon {
+    height: 20%;
+    width: 20%;
+    background-color: transparent;
+    fill: #999; }
+
+.user-nav {
+  display: flex;
+  align-items: center;
+  height: 100%; }
+  .user-nav-section {
+    width: 6rem;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    transition: all .3s;
+    position: relative; }
+    .user-nav-section:hover {
+      background-color: #f4f2f2; }
+    .user-nav-section-icon {
+      width: 3rem;
+      height: 100%;
+      fill: gray; }
+    .user-nav-section-notification {
+      color: white;
+      background-color: #FF3366;
+      width: 2rem;
+      height: 2rem;
+      padding: .2rem;
+      border-radius: 100%;
+      position: absolute;
+      top: 1rem;
+      right: 1rem; }
+  .user-nav-profile {
+    width: 9rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .user-nav-profile-span {
+      color: gray;
+      font-size: 1.5rem;
+      margin-left: .5rem; }
+    .user-nav-profile-img {
+      width: 3.5rem;
+      border-radius: 100px; }
+    .user-nav-profile:hover {
+      background-color: #f4f2f2; }

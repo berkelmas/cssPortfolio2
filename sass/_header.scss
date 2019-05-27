@@ -1,4 +1,108 @@
 .header {
   height: 7rem;
   background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-img {
+    height: 50%;
+    margin-left: 1rem;
+  }
+}
+
+.search {
+  &-input {
+    border-radius: 100px;
+    border : none;
+    padding : 1rem 3rem;
+    outline : none;
+    background-color: $color-grey-light-1;
+    transition: all .5s;
+    width: 25rem;
+
+    &:focus {
+      background-color: darken($color-grey-light-1, 10%);
+      width: 30rem;
+    }
+  }
+
+  &-button {
+    height: 5rem;
+    width : 5rem;
+    border : none;
+    outline: none;
+    margin-left : -5rem;
+    background-color: transparent;
+    &-icon {
+      height: 20%;
+      width: 20%;
+      background-color: transparent;
+      fill : $color-grey-dark-2;
+    }
+  }
+}
+
+.user-nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  &-section {
+    width: 6rem;
+    height: 100%;
+    margin : 0;
+    text-align: center;
+    transition: all .3s;
+
+    position: relative;
+
+
+    &:hover {
+      background-color: $color-grey-light-2;
+    }
+
+    &-icon {
+      width: 3rem;
+      height: 100%;
+      fill : gray;
+    }
+
+    &-notification {
+      color : white;
+      background-color: $color-primary-light;
+      width: 2rem;
+      height: 2rem;
+      padding: .2rem;
+      border-radius: 100%;
+
+      position : absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+  }
+
+  &-profile {
+    width: 9rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-span {
+      color : gray;
+      font-size: 1.5rem;
+      margin-left : .5rem;
+    }
+
+    &-img {
+      width: 3.5rem;
+      border-radius: 100px;
+    }
+
+    &:hover {
+      background-color: $color-grey-light-2;
+    }
+  }
+
 }
