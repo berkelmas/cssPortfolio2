@@ -1,18 +1,18 @@
 .content {
   display: flex;
   flex-direction: row;
+  flex-grow : 1;
 }
 
 .sidebar {
   background-color: $color-grey-dark-1;
   color: $color-grey-light-2;
   width: 18%;
-  height: 53rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  flex-shrink: 0; 
   justify-content: space-between;
 
   &-nav {
@@ -23,13 +23,10 @@
     display: flex;
     flex-direction: column;
 
-    justify-content: center;
-
     &-item {
       font-size: 1rem;
       text-transform: uppercase;
       padding : 1rem 1rem;
-      width: 100%;
 
       position : relative;
 
@@ -37,14 +34,20 @@
         background-color: $color-primary;
       }
 
+      &-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
       &::before {
         content : "";
         position: absolute;
         width: 2.5%;
-        height: 65%;
+        height: 100%;
         background-color: $color-primary;
         margin-left : -1rem;
-        margin-top: -.4rem;
+        margin-top: -1rem;
         opacity: 0;
 
         transition: all .3s;
@@ -81,9 +84,4 @@
     font-size: 1.1rem;
 
   }
-}
-
-.hotel-view {
-  flex-grow: 1;
-  background-color: gray;
 }
