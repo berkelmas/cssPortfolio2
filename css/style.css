@@ -64,13 +64,14 @@ body {
       .sidebar-nav-item::before {
         content: "";
         position: absolute;
-        width: 2.5%;
+        width: 2%;
         height: 100%;
         background-color: #eb2f64;
         margin-left: -1rem;
         margin-top: -1rem;
-        opacity: 0;
-        transition: all .3s; }
+        transform: scaleY(0);
+        transform-origin: center;
+        transition: all .5s; }
       .sidebar-nav-item > a {
         text-decoration: none;
         color: white; }
@@ -81,7 +82,7 @@ body {
         height: 1.5rem;
         fill: white; }
       .sidebar-nav-item:hover::before {
-        opacity: 1; }
+        transform: scaleY(1); }
 
 .siderbar-nav-legal {
   text-align: center; }
