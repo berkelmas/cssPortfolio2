@@ -30,14 +30,43 @@ body {
 
 .content {
   display: flex;
-  flex-direction: row;
-  height: 80%; }
+  flex-direction: row; }
 
 .sidebar {
-  background-color: #101d2c;
+  background-color: #333;
   color: #f4f2f2;
-  flex-basis: 18%;
-  height: 100%; }
+  width: 18%;
+  height: 53rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  .sidebar-nav {
+    list-style: none;
+    width: 100%;
+    margin-top: 2rem; }
+    .sidebar-nav-item {
+      font-size: 1rem;
+      text-transform: uppercase;
+      padding: 1rem 1rem;
+      width: 100%; }
+      .sidebar-nav-item > a {
+        text-decoration: none;
+        color: white;
+        margin-left: 1rem; }
+        .sidebar-nav-item > a > span {
+          margin-left: 3rem; }
+      .sidebar-nav-item-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: white; }
+      .sidebar-nav-item:hover {
+        background-color: #eb2f64; }
+
+.siderbar-nav-legal {
+  text-align: center; }
+  .siderbar-nav-legal-paragraph {
+    font-size: 1.1rem; }
 
 .hotel-view {
   flex-grow: 1;
@@ -76,7 +105,7 @@ body {
     height: 20%;
     width: 20%;
     background-color: transparent;
-    fill: #999; }
+    fill: #777; }
 
 .user-nav {
   display: flex;
