@@ -181,18 +181,22 @@ body {
   display: flex;
   flex-direction: column; }
   .hotel-view-images {
-    display: flex; }
+    display: flex;
+    height: 30%; }
     .hotel-view-images-block-img {
       display: block;
       width: 100%;
       object-fit: cover; }
   .hotel-view-header {
-    height: 6rem;
+    height: 10%;
     background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 5; }
     .hotel-view-header-left {
       display: flex;
       flex-direction: row;
@@ -251,3 +255,33 @@ body {
           font-weight: 300; }
         .hotel-view-header-right-score:hover {
           background-color: #BA265D; }
+  .hotel-view-block {
+    display: flex;
+    flex-direction: row;
+    height: 60%; }
+    .hotel-view-block-left {
+      background-color: #faf9f9;
+      height: 100%;
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .hotel-view-block-left-card {
+        background-color: white;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+        height: 80%;
+        width: 80%;
+        padding: 1rem; }
+        .hotel-view-block-left-card > p {
+          color: gray;
+          padding: 1rem;
+          font-size: 1rem; }
+        .hotel-view-block-left-card > hr {
+          border: 0.5px solid #f3f3f3; }
+      .hotel-view-block-left-list {
+        list-style: georgian outside url("../img/svgicons.svg#icon-star-half");
+        color: gray;
+        padding: 1rem; }
+    .hotel-view-block-right {
+      background-color: gray;
+      width: 30%; }
