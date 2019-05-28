@@ -5,11 +5,14 @@
 
   &-images {
     display: flex;
-    height: 25%;
 
-    &-img {
-      width: 33.3333%;
-      object-fit: cover;
+    &-block {
+
+      &-img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+      }
     }
   }
 
@@ -36,7 +39,16 @@
         margin-left: 1rem;
       }
       &-stars {
-        color : gray;
+
+        &-icon {
+          fill : $color-stars-yellow;
+          height: 2rem;
+          width: 2rem;
+
+          &:first-of-type {
+            margin-left: 1rem;
+          }
+        }
       }
     }
 
