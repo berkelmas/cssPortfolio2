@@ -20,7 +20,7 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center; }
 
@@ -158,17 +158,20 @@ body {
       top: 1rem;
       right: 1rem; }
   .user-nav-profile {
-    width: 9rem;
+    width: 10rem;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    display: flex; }
+    .user-nav-profile-a {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      text-decoration: none; }
     .user-nav-profile-span {
       color: gray;
-      font-size: 1.5rem;
-      margin-left: .5rem; }
+      font-size: 1.5rem; }
     .user-nav-profile-img {
-      width: 3.5rem;
+      width: 45%;
       border-radius: 100px; }
     .user-nav-profile:hover {
       background-color: #f4f2f2; }

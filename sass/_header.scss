@@ -83,20 +83,27 @@
   }
 
   &-profile {
-    width: 9rem;
+    width: 10rem;
     height: 100%;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+
+    &-a {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      text-decoration: none;
+    }
 
     &-span {
       color : gray;
       font-size: 1.5rem;
-      margin-left : .5rem;
+
     }
 
     &-img {
-      width: 3.5rem;
+      width: 45%;
       border-radius: 100px;
     }
 
