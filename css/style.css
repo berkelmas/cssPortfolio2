@@ -93,7 +93,8 @@ body {
 .siderbar-nav-legal {
   text-align: center; }
   .siderbar-nav-legal-paragraph {
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    padding: .5rem 1rem; }
 
 .header {
   height: 7rem;
@@ -257,31 +258,50 @@ body {
           background-color: #BA265D; }
   .hotel-view-block {
     display: flex;
-    flex-direction: row;
-    height: 60%; }
+    flex-direction: row; }
     .hotel-view-block-left {
       background-color: #faf9f9;
-      height: 100%;
       width: 70%;
       display: flex;
+      flex-direction: row;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      padding: 6rem; }
       .hotel-view-block-left-card {
         background-color: white;
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-        height: 80%;
-        width: 80%;
-        padding: 1rem; }
-        .hotel-view-block-left-card > p {
+        display: flex;
+        flex-direction: column; }
+        .hotel-view-block-left-card-description {
+          height: 50%; }
+          .hotel-view-block-left-card-description > p {
+            color: gray;
+            padding: 2rem;
+            font-size: 1.2rem; }
+          .hotel-view-block-left-card-description > hr {
+            border: 0.5px solid #f3f3f3; }
+      .hotel-view-block-left-container {
+        display: flex;
+        height: 14rem;
+        justify-content: center; }
+        .hotel-view-block-left-container-list {
+          list-style-type: none;
           color: gray;
-          padding: 1rem;
-          font-size: 1rem; }
-        .hotel-view-block-left-card > hr {
-          border: 0.5px solid #f3f3f3; }
-      .hotel-view-block-left-list {
-        list-style: georgian outside url("../img/svgicons.svg#icon-star-half");
-        color: gray;
-        padding: 1rem; }
+          padding: 2rem 1rem;
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap; }
+          .hotel-view-block-left-container-list-item {
+            font-size: 1.35rem;
+            display: flex; }
+            .hotel-view-block-left-container-list-item::before {
+              content: "";
+              height: 2rem;
+              width: 2rem;
+              background-color: #eb2f64;
+              -webkit-mask-image: url("../img/chevron-small-left.svg");
+              -webkit-mask-size: cover; }
     .hotel-view-block-right {
       background-color: gray;
       width: 30%; }

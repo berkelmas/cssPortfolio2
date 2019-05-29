@@ -117,42 +117,72 @@
   &-block {
     display: flex;
     flex-direction: row;
-    height: 60%;
+
 
     &-left {
       background-color: $color-grey-light-1;
-      height: 100%;
       width: 70%;
 
       display: flex;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
+      padding : 6rem;
 
       &-card {
         background-color: white;
         box-shadow: 0 0 1rem rgba(black, .1);
-        height: 80%;
-        width: 80%;
-        padding : 1rem;
 
-        & > p {
+        display: flex;
+        flex-direction: column;
+
+        &-description {
+          height: 50%;
+
+          & > p {
+            color: gray;
+            padding: 2rem;
+            font-size: 1.2rem;
+          }
+          & > hr {
+            border : .5px solid lighten(gray, 45%);
+          }
+        }
+      }
+
+      &-container {
+        display: flex;
+        height: 14rem;
+        justify-content: center;
+        &-list {
+          list-style-type : none;
           color: gray;
-          padding: 1rem;
-          font-size: 1rem;
-        }
-        & > hr {
-          border : .5px solid lighten(gray, 45%);
+          padding : 2rem 1rem;
+          width: 90%;
+
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+
+          &-item {
+            font-size: 1.35rem;
+            display: flex;
+
+            &::before {
+              content: "";
+
+              height: 2rem;
+              width: 2rem;
+
+              background-color: $color-primary;
+              -webkit-mask-image: url('../img/chevron-small-left.svg');
+              -webkit-mask-size: cover;
+            }
+          }
         }
       }
 
-      &-list {
-        list-style: georgian outside url('../img/svgicons.svg#icon-star-half');
-        color: gray;
-        padding : 1rem;
-        &-item {
 
-        }
-      }
     }
     &-right {
       background-color: gray;
