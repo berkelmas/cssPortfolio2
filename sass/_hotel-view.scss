@@ -127,7 +127,7 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      padding : 6rem;
+      padding : 6rem 2rem;
 
       &-card {
         background-color: white;
@@ -144,9 +144,7 @@
             padding: 2rem;
             font-size: 1.2rem;
           }
-          & > hr {
-            border : .5px solid lighten(gray, 45%);
-          }
+
         }
       }
 
@@ -185,8 +183,81 @@
 
     }
     &-right {
-      background-color: gray;
+      background-color: $color-grey-light-1;
       width: 30%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 2rem;
+
+      &-block {
+        background-color: white;
+        box-shadow: 0 0 1rem rgba(black, .2);
+        min-width: 10rem;
+        min-height: 10rem;
+        padding: 1rem;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0.2;
+          width: 100%;
+          height: 100%;
+          background-image: url('../img/quotesleft.svg');
+          background-repeat: no-repeat;
+          background-size: 6rem 6rem;
+        }
+
+        & > p {
+          color : gray;
+          font-size: 1.2rem;
+          padding: 1rem;
+        }
+
+        &-profile {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+
+          &-score {
+            color: $color-primary;
+            font-size: 2.2rem;
+            font-weight: 300;
+          }
+
+          &-img {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 100px;
+          }
+
+          &-text {
+            display: flex;
+            flex-direction: column;
+            margin-left: .8rem;
+            flex-grow: 1;
+
+            &-name {
+              font-size: 1rem;
+              text-transform: uppercase;
+            }
+            &-date {
+              font-size: .7rem;
+              color: gray;
+            }
+          }
+        }
+
+        &:not(:first-of-type) {
+          margin-top: 2rem;
+        }
+      }
     }
   }
 }

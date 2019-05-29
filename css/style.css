@@ -33,6 +33,9 @@ body {
   display: flex;
   flex-direction: column; }
 
+hr {
+  border: 0.5px solid #f3f3f3; }
+
 .content {
   display: flex;
   flex-direction: row;
@@ -266,7 +269,7 @@ body {
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      padding: 6rem; }
+      padding: 6rem 2rem; }
       .hotel-view-block-left-card {
         background-color: white;
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
@@ -278,8 +281,6 @@ body {
             color: gray;
             padding: 2rem;
             font-size: 1.2rem; }
-          .hotel-view-block-left-card-description > hr {
-            border: 0.5px solid #f3f3f3; }
       .hotel-view-block-left-container {
         display: flex;
         height: 14rem;
@@ -303,5 +304,58 @@ body {
               -webkit-mask-image: url("../img/chevron-small-left.svg");
               -webkit-mask-size: cover; }
     .hotel-view-block-right {
-      background-color: gray;
-      width: 30%; }
+      background-color: #faf9f9;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 2rem; }
+      .hotel-view-block-right-block {
+        background-color: white;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+        min-width: 10rem;
+        min-height: 10rem;
+        padding: 1rem;
+        position: relative; }
+        .hotel-view-block-right-block::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0.2;
+          width: 100%;
+          height: 100%;
+          background-image: url("../img/quotesleft.svg");
+          background-repeat: no-repeat;
+          background-size: 6rem 6rem; }
+        .hotel-view-block-right-block > p {
+          color: gray;
+          font-size: 1.2rem;
+          padding: 1rem; }
+        .hotel-view-block-right-block-profile {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center; }
+          .hotel-view-block-right-block-profile-score {
+            color: #eb2f64;
+            font-size: 2.2rem;
+            font-weight: 300; }
+          .hotel-view-block-right-block-profile-img {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 100px; }
+          .hotel-view-block-right-block-profile-text {
+            display: flex;
+            flex-direction: column;
+            margin-left: .8rem;
+            flex-grow: 1; }
+            .hotel-view-block-right-block-profile-text-name {
+              font-size: 1rem;
+              text-transform: uppercase; }
+            .hotel-view-block-right-block-profile-text-date {
+              font-size: .7rem;
+              color: gray; }
+        .hotel-view-block-right-block:not(:first-of-type) {
+          margin-top: 2rem; }
