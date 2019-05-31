@@ -311,6 +311,18 @@ hr {
       justify-content: center;
       align-items: center;
       padding: 0 2rem; }
+      .hotel-view-block-right-button {
+        margin-top: 2rem;
+        background-color: transparent;
+        border: none;
+        color: #BA265D;
+        font-weight: 600;
+        font-size: 1.2rem;
+        border-bottom: 1px solid #BA265D;
+        transition: all .5s;
+        cursor: pointer; }
+        .hotel-view-block-right-button:hover {
+          transform: scale(1.2); }
       .hotel-view-block-right-block {
         background-color: white;
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
@@ -359,3 +371,38 @@ hr {
               color: gray; }
         .hotel-view-block-right-block:not(:first-of-type) {
           margin-top: 2rem; }
+  .hotel-view-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 12rem; }
+    .hotel-view-bottom-heading {
+      color: gray;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 1.6rem; }
+    .hotel-view-bottom-button-rooms {
+      text-decoration: none;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      color: white;
+      border-radius: 100px;
+      text-transform: uppercase;
+      background-image: linear-gradient(to right, #FF3366, #BA265D);
+      position: relative; }
+      .hotel-view-bottom-button-rooms::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, #FF3366, #BA265D);
+        border-radius: 100px;
+        padding: 1rem 2rem;
+        transition: all .2s; }
+      .hotel-view-bottom-button-rooms:hover .hotel-view-bottom-button-rooms::before {
+        opacity: 0;
+        transform: scale(1.2); }
