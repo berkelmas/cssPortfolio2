@@ -40,6 +40,9 @@ hr {
   display: flex;
   flex-direction: row;
   flex-grow: 1; }
+  @media (max-width: 75em) {
+    .content {
+      flex-direction: column; } }
 
 .sidebar {
   background-color: #333;
@@ -50,17 +53,29 @@ hr {
   align-items: center;
   flex-shrink: 0;
   justify-content: space-between; }
+  @media (max-width: 75em) {
+    .sidebar {
+      flex-direction: row;
+      width: 100%; } }
   .sidebar-nav {
     list-style: none;
     width: 100%;
     margin-top: 2rem;
     display: flex;
     flex-direction: column; }
+    @media (max-width: 75em) {
+      .sidebar-nav {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 0; } }
     .sidebar-nav-item {
       font-size: 1rem;
       text-transform: uppercase;
       padding: 1rem 1rem;
       position: relative; }
+      @media (max-width: 75em) {
+        .sidebar-nav-item {
+          flex-grow: 1; } }
       .sidebar-nav-item.active {
         background-color: #eb2f64; }
       .sidebar-nav-item-link {
@@ -95,6 +110,9 @@ hr {
 
 .siderbar-nav-legal {
   text-align: center; }
+  @media (max-width: 75em) {
+    .siderbar-nav-legal {
+      display: none; } }
   .siderbar-nav-legal-paragraph {
     font-size: 1.1rem;
     padding: .5rem 1rem; }
@@ -262,6 +280,9 @@ hr {
   .hotel-view-block {
     display: flex;
     flex-direction: row; }
+    @media (max-width: 56.25em) {
+      .hotel-view-block {
+        flex-direction: column; } }
     .hotel-view-block-left {
       background-color: #faf9f9;
       width: 70%;
@@ -270,6 +291,9 @@ hr {
       justify-content: center;
       align-items: center;
       padding: 6rem 2rem; }
+      @media (max-width: 56.25em) {
+        .hotel-view-block-left {
+          width: 100%; } }
       .hotel-view-block-left-card {
         background-color: white;
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
@@ -311,6 +335,9 @@ hr {
       justify-content: center;
       align-items: center;
       padding: 0 2rem; }
+      @media (max-width: 56.25em) {
+        .hotel-view-block-right {
+          width: 100%; } }
       .hotel-view-block-right-button {
         margin-top: 2rem;
         background-color: transparent;
@@ -321,6 +348,9 @@ hr {
         border-bottom: 1px solid #BA265D;
         transition: all .5s;
         cursor: pointer; }
+        @media (max-width: 56.25em) {
+          .hotel-view-block-right-button {
+            margin-bottom: 2rem; } }
         .hotel-view-block-right-button:hover {
           transform: scale(1.2); }
       .hotel-view-block-right-block {

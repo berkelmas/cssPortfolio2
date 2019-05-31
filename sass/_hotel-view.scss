@@ -9,6 +9,7 @@
 
     &-block {
 
+
       &-img {
         display: block;
         width: 100%;
@@ -118,6 +119,19 @@
     display: flex;
     flex-direction: row;
 
+    @include respond(tab-land) {
+
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+
+    @include respond(phone) {
+
+    }
+
+
 
     &-left {
       background-color: $color-grey-light-1;
@@ -128,6 +142,18 @@
       justify-content: center;
       align-items: center;
       padding : 6rem 2rem;
+
+      @include respond(tab-land) {
+
+      }
+
+      @include respond(tab-port) {
+        width: 100%;
+      }
+
+      @include respond(phone) {
+
+      }
 
       &-card {
         background-color: white;
@@ -192,6 +218,18 @@
       align-items: center;
       padding: 0 2rem;
 
+      @include respond(tab-land) {
+
+      }
+
+      @include respond(tab-port) {
+        width: 100%;
+      }
+
+      @include respond(phone) {
+
+      }
+
       &-button {
         margin-top: 2rem;
         background-color: transparent;
@@ -202,6 +240,18 @@
         border-bottom: 1px solid $color-primary-dark;
         transition: all .5s;
         cursor: pointer;
+
+        @include respond(tab-land) {
+
+        }
+
+        @include respond(tab-port) {
+          margin-bottom: 2rem; 
+        }
+
+        @include respond(phone) {
+
+        }
 
         &:hover{
           transform: scale(1.2);

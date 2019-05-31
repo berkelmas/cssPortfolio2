@@ -2,6 +2,19 @@
   display: flex;
   flex-direction: row;
   flex-grow : 1;
+
+  @include respond(tab-land) {
+    flex-direction: column;
+  }
+
+  @include respond(tab-port) {
+
+  }
+
+  @include respond(phone) {
+
+  }
+
 }
 
 .sidebar {
@@ -15,6 +28,19 @@
   flex-shrink: 0;
   justify-content: space-between;
 
+  @include respond(tab-land) {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  @include respond(tab-port) {
+
+  }
+
+  @include respond(phone) {
+
+  }
+
   &-nav {
     list-style: none;
     width: 100%;
@@ -23,12 +49,38 @@
     display: flex;
     flex-direction: column;
 
+    @include respond(tab-land) {
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 0;
+    }
+
+    @include respond(tab-port) {
+
+    }
+
+    @include respond(phone) {
+
+    }
+
     &-item {
       font-size: 1rem;
       text-transform: uppercase;
       padding : 1rem 1rem;
 
       position : relative;
+
+      @include respond(tab-land) {
+        flex-grow : 1; 
+      }
+
+      @include respond(tab-port) {
+
+      }
+
+      @include respond(phone) {
+
+      }
 
       &.active {
         background-color: $color-primary;
@@ -88,6 +140,19 @@
 
 .siderbar-nav-legal {
   text-align: center;
+
+  @include respond(tab-land) {
+    display: none;
+  }
+
+  @include respond(tab-port) {
+
+  }
+
+  @include respond(phone) {
+
+  }
+
   &-paragraph {
     font-size: 1.1rem;
     padding: .5rem 1rem;
